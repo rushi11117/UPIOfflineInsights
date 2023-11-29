@@ -1,33 +1,42 @@
 import Header from './components/header'
 import Footer from './components/footer'
 import Sidebar from './components/sidebar'
-import Chart from './components/chart'
+import homeComponent from './components/homeComponent'
+import reports from './components/reports'
+import dynamicTable from './components/dynamicTable'
+import ChartComponent from './components/chartComponent';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter, Route, Router, Routes, Switch } from 'react-router-dom';
 
 
 function App() {
   return (
-    <div className="App">
-      <div>
+
+    <BrowserRouter >
+      <div className="App">
         <div>
-          <Header />
-        </div>
-        <div class="container">
-          <div class="col">
-            <div class='row'>
+          <div>
+            <Header />
+          </div>
+          <div className="container-fluid">
+            <div className="row mt-4 bg-light">
               <Sidebar />
-            </div>
-            <div class="row">
-              <Chart />
+              <Routes>
+                <Route path='/transactions'  exact Component={ChartComponent} />
+                <Route path='/home' exact Component={homeComponent}/>
+                <Route path='/reports' exact Component={reports}/>
+                <Route path='/dynamic' exact Component={dynamicTable}/>
+              </Routes>
+              {/* <ChartComponent /> */}
             </div>
           </div>
-        </div>
 
-        <div>
-          <Footer />
+          <div>
+            <Footer />
+          </div>
         </div>
       </div>
-    </div>
+    </BrowserRouter >
   );
 }
 

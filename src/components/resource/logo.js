@@ -10,6 +10,7 @@ const Logo = () => {
     whiteSpace: 'nowrap',
     textOverflow: 'ellipsis',
     verticalAlign: 'middle',
+    paddingRight: '4px',
   };
 
   const insightsStyle = {
