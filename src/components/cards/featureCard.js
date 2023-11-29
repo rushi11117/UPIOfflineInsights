@@ -11,8 +11,8 @@ const FeatureCard = ({ feature }) => {
                             className="partner-logo img-fluid"
                             // src={feature.image}
                             alt={feature.name}
-                            // width="100"
-                            // height="100"
+                        // width="100"
+                        // height="100"
                         />
                         <div style={{ fontSize: '20px', margin: '8px 0' }}>
                             {feature.name}

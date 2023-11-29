@@ -1,13 +1,13 @@
 import React from 'react';
-import Partner from './cards/partners';
+import Partner from './cards/ourPartners';
 import transactionGif from './resource/transaction.gif';
 import transactionModes from './resource/transaction-modes.gif';
 import transactionSecurity from './resource/security.gif'
-import FeatureCard from '../components/cards/featureCard';
+import FeatureCard from './cards/featureCard';
 import Trending from './changing/trending';
 
 
-export default function homeComponent() {
+const HomeComponent = () => {
 
   const featureArray = [
     { id: 1, name: 'Multiple Transactions Modes', image: transactionModes, discription: "Multiple Mode And Devices Support" },
@@ -18,7 +18,7 @@ export default function homeComponent() {
   const traindingStat = [
     { id: 1, key: "Successful Transactions", value: 38973979 },
     { id: 2, key: "Active Users", value: 93979 },
-    { id: 3, key: "Daily Transactions", value: 3979, currency: "$" },
+    { id: 3, key: "Daily Transactions", value: 3979, },
     { id: 4, key: "Assets Handled Worth", value: 7673873979, currency: "$" }
   ]
 
@@ -44,3 +44,5 @@ export default function homeComponent() {
     </div>
   );
 }
+
+export default HomeComponent;

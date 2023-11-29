@@ -1,12 +1,12 @@
-import Header from './components/header'
-import Footer from './components/footer'
-import Sidebar from './components/sidebar'
-import homeComponent from './components/homeComponent'
-import reports from './components/reports'
-import dynamicTable from './components/dynamicTable'
+import Header from './components/header';
+import Footer from './components/footer';
+import Sidebar from './components/sidebar';
+import HomeComponent from './components/homeComponent';
+import ReportComponent from './components/resource/reportComponent';
+import DynamicTable from './components/dynamicTable';
 import ChartComponent from './components/chartComponent';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { BrowserRouter, Route, Router, Routes, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 
 function App() {
@@ -22,10 +22,10 @@ function App() {
             <div className="row mt-4 bg-light">
               <Sidebar />
               <Routes>
-                <Route path='/transactions'  exact Component={ChartComponent} />
-                <Route path='/home' exact Component={homeComponent}/>
-                <Route path='/reports' exact Component={reports}/>
-                <Route path='/dynamic' exact Component={dynamicTable}/>
+                <Route path='/transactions' exact element={<ChartComponent />} />
+                <Route path='/home' exact element={<HomeComponent />} />
+                <Route path='/reports' exact element={<ReportComponent />} />
+                <Route path='/dynamic' exact element={<DynamicTable />} />
               </Routes>
               {/* <ChartComponent /> */}
             </div>

@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 // import userEvent from '@testing-library/user-event';
 import DynamicTable from './dynamicTable';
 // import 'chartjs-adapter-date-fns';
-import Partner from './cards/partners'
+import Partner from './cards/ourPartners'
 
 import axios from 'axios';
 import moment from 'moment';
