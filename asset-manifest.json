@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/UPIOfflineInsights/static/css/main.9e3de478.css",
-    "main.js": "/UPIOfflineInsights/static/js/main.0b7dbfff.js",
-    "static/media/transaction.gif": "/UPIOfflineInsights/static/media/transaction.1a1aa474ab97a9f00459.gif",
-    "static/media/transaction-modes.gif": "/UPIOfflineInsights/static/media/transaction-modes.24a03e1666ab084457e6.gif",
-    "static/media/security.gif": "/UPIOfflineInsights/static/media/security.6674077231a526a3dee9.gif",
-    "static/media/nagar.png": "/UPIOfflineInsights/static/media/nagar.d505dacbb5e397fd92ee.png",
-    "static/media/amc.png": "/UPIOfflineInsights/static/media/amc.27bf1db48f95103b2a36.png",
-    "static/media/mhgov.png": "/UPIOfflineInsights/static/media/mhgov.ee706ae52ab6c409a59a.png",
-    "static/media/npci.png": "/UPIOfflineInsights/static/media/npci.e9c632fed77053ed7028.png",
-    "static/media/amazon-web-services.png": "/UPIOfflineInsights/static/media/amazon-web-services.5f2da42aeead8b12d070.png",
-    "static/media/amazon-aws.png": "/UPIOfflineInsights/static/media/amazon-aws.b1bd439413d1cb1a16ea.png",
-    "static/media/upi-report-thumbnail.jpg": "/UPIOfflineInsights/static/media/upi-report-thumbnail.5213129cbd6441320f70.jpg",
-    "static/media/CBA.png": "/UPIOfflineInsights/static/media/CBA.d28583ae7a008cecece2.png",
-    "static/media/lazard.png": "/UPIOfflineInsights/static/media/lazard.4d77f461583574169691.png",
-    "static/media/logo192.ico": "/UPIOfflineInsights/static/media/logo192.205e2e9a70433085ebd5.ico",
-    "index.html": "/UPIOfflineInsights/index.html",
-    "main.9e3de478.css.map": "/UPIOfflineInsights/static/css/main.9e3de478.css.map",
-    "main.0b7dbfff.js.map": "/UPIOfflineInsights/static/js/main.0b7dbfff.js.map"
+    "main.css": "/static/css/main.9e3de478.css",
+    "main.js": "/static/js/main.aad428e2.js",
+    "static/media/transaction.gif": "/static/media/transaction.1a1aa474ab97a9f00459.gif",
+    "static/media/transaction-modes.gif": "/static/media/transaction-modes.24a03e1666ab084457e6.gif",
+    "static/media/security.gif": "/static/media/security.6674077231a526a3dee9.gif",
+    "static/media/nagar.png": "/static/media/nagar.d505dacbb5e397fd92ee.png",
+    "static/media/amc.png": "/static/media/amc.27bf1db48f95103b2a36.png",
+    "static/media/mhgov.png": "/static/media/mhgov.ee706ae52ab6c409a59a.png",
+    "static/media/npci.png": "/static/media/npci.e9c632fed77053ed7028.png",
+    "static/media/amazon-web-services.png": "/static/media/amazon-web-services.5f2da42aeead8b12d070.png",
+    "static/media/amazon-aws.png": "/static/media/amazon-aws.b1bd439413d1cb1a16ea.png",
+    "static/media/upi-report-thumbnail.jpg": "/static/media/upi-report-thumbnail.5213129cbd6441320f70.jpg",
+    "static/media/CBA.png": "/static/media/CBA.d28583ae7a008cecece2.png",
+    "static/media/lazard.png": "/static/media/lazard.4d77f461583574169691.png",
+    "static/media/logo192.ico": "/static/media/logo192.205e2e9a70433085ebd5.ico",
+    "index.html": "/index.html",
+    "main.9e3de478.css.map": "/static/css/main.9e3de478.css.map",
+    "main.aad428e2.js.map": "/static/js/main.aad428e2.js.map"
   },
   "entrypoints": [
     "static/css/main.9e3de478.css",
-    "static/js/main.0b7dbfff.js"
+    "static/js/main.aad428e2.js"
   ]
 }
