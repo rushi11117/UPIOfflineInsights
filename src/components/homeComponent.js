@@ -41,9 +41,9 @@ const HomeComponent = () => {
           </div>
         ))}
       </div>
-      <div className='row rows-cols-1 mt-4 g-4'>
+      {/* <div className='row rows-cols-1 mt-4 g-4'>
         <ReportsComponent />
-      </div>
+      </div> */}
       <Partner />
     </div>
   );
