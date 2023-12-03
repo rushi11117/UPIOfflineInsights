@@ -25,7 +25,7 @@ const ReportsComponent = () => {
     };
 
     return (
-        <div className="col-md-9 ms-sm-auto mt-4 col-lg-10 px-md-4">
+        <div className="col-md-9 ms-sm-auto mt-4 col-lg-10 px-md-4 border-bottom">
             {years.map((year, index) => (
                 <div key={index} className="mb-3">
                     <div

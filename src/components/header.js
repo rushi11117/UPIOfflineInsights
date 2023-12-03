@@ -3,7 +3,7 @@ import Logoicon from './resource/logo192.ico'
 import Logotext from './resource/logo'
 import { Link } from 'react-router-dom';
 
-export default function header() {
+const HeaderComponent = () => {
 
     // eslint-disable-next-line react-hooks/rules-of-hooks
     // const [expanded, setExpanded] = useState(false);
@@ -11,6 +11,8 @@ export default function header() {
     // const handleNavToggle = () => {
     //     setExpanded(!expanded)
     // }
+
+
 
     const columnStyle = {
         display: 'flex',
@@ -29,9 +31,11 @@ export default function header() {
         height: '35px',
     }
 
+
+
     return (
         <div style={header}>
-            <header className="navbar navbar-dark sticky-top bg-light flex-md-nowrap p-0 shadow" >
+            <header className="navbar navbar-expand-lg navbar-light bg-light sticky-top border-bottom" >
                 <Link to="/home" className="navbar-brand col-md-3 col-lg-2 me-0 px-3">
                     <div className="column" style={columnStyle}>
                         <div className='row'>
@@ -61,3 +65,5 @@ export default function header() {
         </div >
     )
 }
+
+export default HeaderComponent;

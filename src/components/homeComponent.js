@@ -5,6 +5,7 @@ import transactionModes from './resource/transaction-modes.gif';
 import transactionSecurity from './resource/security.gif'
 import FeatureCard from './cards/featureCard';
 import Trending from './changing/trending';
+import ReportsComponent from './resource/reportComponent';
 
 
 const HomeComponent = () => {
@@ -39,6 +40,9 @@ const HomeComponent = () => {
             <FeatureCard feature={feature} />
           </div>
         ))}
+      </div>
+      <div className='row rows-cols-1 mt-4 g-4'>
+        <ReportsComponent />
       </div>
       <Partner />
     </div>

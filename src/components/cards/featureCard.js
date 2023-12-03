@@ -9,7 +9,7 @@ const FeatureCard = ({ feature }) => {
                     <>
                         <img
                             className="partner-logo img-fluid"
-                            // src={feature.image}
+                            src={feature.image}
                             alt={feature.name}
                         // width="100"
                         // height="100"

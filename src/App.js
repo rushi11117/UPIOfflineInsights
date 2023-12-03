@@ -1,4 +1,4 @@
-import Header from './components/header';
+import HeaderComponent from './components/header';
 import Footer from './components/footer';
 import Sidebar from './components/sidebar';
 import HomeComponent from './components/homeComponent';
@@ -16,7 +16,7 @@ function App() {
       <div className="App">
         <div>
           <div>
-            <Header />
+            <HeaderComponent />
           </div>
           <div className="container-fluid">
             <div className="row mt-4 bg-light">
