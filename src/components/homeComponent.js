@@ -5,7 +5,6 @@ import transactionModes from './resource/transaction-modes.gif';
 import transactionSecurity from './resource/security.gif'
 import FeatureCard from './cards/featureCard';
 import Trending from './changing/trending';
-import ReportsComponent from './resource/reportComponent';
 
 
 const HomeComponent = () => {

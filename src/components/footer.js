@@ -4,10 +4,6 @@ import Logoicon from './resource/logo'
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
-    const imgStyle = {
-        height: '32px',
-        width: '32px',
-    };
     return (
 
         <footer class="row row-cols-1 bg-light row-cols-sm-2 row-cols-md-5 py-5  my-5 border-top">

@@ -4,10 +4,8 @@ import React, { useEffect, useState } from 'react';
 // import userEvent from '@testing-library/user-event';
 import DynamicTable from './dynamicTable';
 // import 'chartjs-adapter-date-fns';
-import Partner from './cards/ourPartners'
 
 import axios from 'axios';
-import moment from 'moment';
 
 
 const ChartComponent = () => {
@@ -20,7 +18,7 @@ const ChartComponent = () => {
             axios.get('http://localhost:8085/transactions-insights')
                 .then(response => {
                     setTransactionBufferData(response.data);
-                    console.log("Data" +JSON.stringify(response))
+                    console.log("Data" + JSON.stringify(response))
                 })
                 .catch(error => {
                     console.log("Error Thrown :", error)
@@ -30,34 +28,6 @@ const ChartComponent = () => {
     }, [])
 
 
-    const getStatusClass = (status) => {
-        switch (status) {
-            case 'TRANSACTION_SUCCESS':
-                return 'green';
-            case 'TRANSACTION_FAILED':
-                return 'red';
-            case 'TRANSACTION_PENDING':
-                return 'orange';
-            default:
-                return '';
-        }
-    }
-
-
-    const chartOptions = {
-        type: 'radar',
-        data: transactionBufferData,
-        options: {
-            datasets: {
-                bar: {
-                    backgroundColor: 'rgba(255, 99, 132, 0.2)', // Background color for bars
-                    borderColor: 'rgba(255, 99, 132, 1)', // Border color for bars
-                    borderWidth: 1 // Border width for bars
-                }
-            },
-            // Other configurations...
-        }
-    };
 
 
     return (
