@@ -1,5 +1,6 @@
 import React from 'react';
 import { Col, Card } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const ImageNameDexc = ({ dataObject }) => {
 
@@ -17,7 +18,7 @@ const ImageNameDexc = ({ dataObject }) => {
                 <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
                     {dataObject.map(({ id, name, image, expand }) => (
                         <Col key={id} xs={6} sm={4} md={3} lg={2} className="mb-3">
-                            <a href={expand} className=' text-decoration-none ' target="_blank" rel="noopener noreferrer">
+                            <Link to={expand} className=' text-decoration-none ' target="_blank" rel="noopener noreferrer">
                                 <Card
                                     className="dataObject-card "
                                     onMouseEnter={handleMouseEnter}
@@ -36,7 +37,7 @@ const ImageNameDexc = ({ dataObject }) => {
                                         </div>
                                     </Card.Body>
                                 </Card>
-                            </a>
+                            </Link>
                         </Col>
                     ))}
                 </div>

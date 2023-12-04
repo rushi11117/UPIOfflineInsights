@@ -8,6 +8,7 @@ import amclogo from '../resource/partners/amc.png';
 import npcilogo from '../resource/partners/npci.png';
 import mhgov from '../resource/partners/mhgov.png'
 import lazardlogo from '../resource/partners/lazard.png'
+import { Link } from 'react-router-dom';
 
 const Partner = () => {
     const ourProdPartners = [
@@ -33,7 +34,7 @@ const Partner = () => {
 
         return partners.map((partner) => (
             <Col key={partner.id} xs={6} sm={4} md={3} lg={2} className="mb-3">
-                <a href={partner.link} className=' text-decoration-none ' target="_blank" rel="noopener noreferrer">
+                <Link to={partner.link} className=' text-decoration-none ' target="_blank" rel="noopener noreferrer">
                     <Card
                         className="partner-card "
                         onMouseEnter={handleMouseEnter}
@@ -52,7 +53,7 @@ const Partner = () => {
                             </div>
                         </Card.Body>
                     </Card>
-                </a>
+                </Link>
             </Col>
         ));
     };

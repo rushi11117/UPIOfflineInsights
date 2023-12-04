@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import moment from 'moment';
 import stringProcessing from './Utils/stringProcessing';
 import ToastComponent from './notify/toastComponent';
+import { Link } from 'react-router-dom';
 
 const DynamicTable = ({ data, link }) => {
     const [searchTerm, setSearchTerm] = useState('');
@@ -77,9 +78,9 @@ const DynamicTable = ({ data, link }) => {
                                         {(currentPage - 1) * itemsPerPage + index + 1}
                                     </td>
                                     <td className='border'>
-                                        <a href='#' onClick={() => handleShowModal(transaction)}>
+                                        <Link to='#' onClick={() => handleShowModal(transaction)}>
                                             {transaction.id}
-                                        </a>
+                                        </Link>
                                         {selectedTransaction && (
                                             <ToastComponent
                                                 showModal={showModal}
