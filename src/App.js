@@ -15,7 +15,7 @@ function App() {
     <BrowserRouter >
       <div className="App">
         <div>
-          <div>
+          <div className='sticky-top'>
             <HeaderComponent />
           </div>
           <div className="container-fluid">
