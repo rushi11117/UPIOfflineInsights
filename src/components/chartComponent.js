@@ -6,6 +6,7 @@ import DynamicTable from './dynamicTable';
 // import 'chartjs-adapter-date-fns';
 
 import axios from 'axios';
+import { Bar } from 'react-chartjs-2';
 
 
 const ChartComponent = () => {
@@ -27,6 +28,10 @@ const ChartComponent = () => {
         fetchTransactionBufferData();
     }, [])
 
+    const chartData = [12,45,64,29,67,82,66,46,21,42,68,57,74] 
+    const options = {
+        
+    }
 
 
 
@@ -55,10 +60,10 @@ const ChartComponent = () => {
                     </button>
                 </div>
             </div>
-            {/* 
+            
             <div>
-                <Bar data={chartData} options={chartOptions} />
-            </div> */}
+                <Bar data={chartData} options={options}/>
+            </div>
 
             <div>
                 <div className="table-responsive">
