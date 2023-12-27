@@ -5,7 +5,7 @@ import SecondaryButton from './micro-component/secondaryButton';
 import { Link, useNavigate } from 'react-router-dom';
 import { useTheme } from './Theme/ThemeContext';
 import Logo from './Theme/Logo'
-import { logout } from './Utils/loginUtils'
+// import { logout } from './Utils/loginUtils'
 
 const HeaderComponent = () => {
 
@@ -14,11 +14,6 @@ const HeaderComponent = () => {
 
     const handleLogoClick = () => {
         toggleDarkMode();
-    };
-
-    const handleLogOut = () => {
-        logout();
-        navigate('/login')
     };
 
     const columnStyle = {
@@ -65,7 +60,7 @@ const HeaderComponent = () => {
                     </div>
                     <div className="nav-item text-nowrap">
                         <Link to="" className="nav-link  px-3" >
-                            <SecondaryButton buttonText={"Logout"} onClick={handleLogOut()} />
+                            <SecondaryButton buttonText={"Logout"}  />
                         </Link>
                     </div>
                 </div >

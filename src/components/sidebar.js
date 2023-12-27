@@ -55,7 +55,7 @@ const SidebarLink = ({ link, iconComponents }) => {
     return (
         <React.Fragment>
             <Nav.Link as={Link} to={link.url} className="nav-link" onClick={handleToggle}>
-                {IconComponent && <IconComponent size={25} className="m-1" />} {link.title}
+                {IconComponent && <IconComponent size={25} className="" />} {link.title}
             </Nav.Link>
             {link.children && renderChildren(link.children)}
         </React.Fragment>

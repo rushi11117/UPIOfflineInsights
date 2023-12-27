@@ -5,7 +5,6 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-// sessionStorage.setItem('isLoggedIn', false)
 root.render(
   <React.StrictMode>
     <App />
