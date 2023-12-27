@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
-import ImageNameDexc from '../cards/imageNameDexc';
-import image from './upi-report-thumbnail.jpg';
+import ImageNameDexc from './cards/imageNameDexc';
+import image from '../components/resource/upi-report-thumbnail.jpg';
 
 const ReportsComponent = () => {
+
+
     const [expandedYear, setExpandedYear] = useState(null);
 
     const currentYear = new Date().getFullYear();
@@ -26,6 +28,11 @@ const ReportsComponent = () => {
 
     return (
         <div className="col-md-9 ms-sm-auto mt-4 col-lg-10 px-md-4 border-bottom">
+            <p className='text-muted'>
+                <h4>
+                    Monthly Report
+                </h4>
+            </p>
             {years.map((year, index) => (
                 <div key={index} className="mb-3">
                     <div
@@ -54,3 +61,4 @@ const ReportsComponent = () => {
 };
 
 export default ReportsComponent;
+

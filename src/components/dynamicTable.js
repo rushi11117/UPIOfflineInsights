@@ -3,11 +3,12 @@ import moment from 'moment';
 import stringProcessing from './Utils/stringProcessing';
 import ToastComponent from './notify/toastComponent';
 import { Link } from 'react-router-dom';
+import { getStatusClass } from './Utils/warningLevelText';
 
 const DynamicTable = ({ data, link }) => {
     const [searchTerm, setSearchTerm] = useState('');
     const [currentPage, setCurrentPage] = useState(1);
-    const itemsPerPage = 14; // Number of items per page
+    const itemsPerPage = 20; // Number of items per page
 
     const isIdPresent = data.length > 0 && data[0].hasOwnProperty('id');
 
@@ -34,30 +35,17 @@ const DynamicTable = ({ data, link }) => {
         setSelectedTransaction(null);
     };
 
-    const getStatusClass = (status) => {
-        switch (status) {
-            case 'TRANSACTION_SUCCESS':
-                return 'green';
-            case 'TRANSACTION_FAILED':
-                return 'red';
-            case 'TRANSACTION_PENDING':
-                return 'orange';
-            default:
-                return '';
-        }
-    };
-
     return (
         <div className='container'>
-            {data.id && (
+            {data[0].id && (
                 <input
+                    className='m-3 w-40'
                     type="text"
-                    placeholder="Search by transaction id"
+                    placeholder="Search by transaction id "
                     value={searchTerm}
                     onChange={e => setSearchTerm(e.target.value)}
                 />
             )}
-            <div>Sort By :</div>
             <div className="table-scroll">
                 <div className="table-responsive">
                     <table className="table">

@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Dashboard",
+    "url": "/UPIOfflineInsights",
+    "icon": "MdDashboard"
+  },
+  {
+    "id": 2,
+    "title": "Transactions",
+    "url": "/transactions",
+    "icon": "FaRupeeSign"
+  },
+  {
+    "id": 3,
+    "title": "ONDC",
+    "url": "/ondc",
+    "icon": "FaShoppingCart"
+  },
+  {
+    "id": 4,
+    "title": "Administratioin",
+    "url": "/administratioin",
+    "icon": "MdAdminPanelSettings"
+  },
+  {
+    "id": 5,
+    "title": "Reports",
+    "url": "/reports",
+    "icon": "HiOutlineDocumentReport"
+  },
+  {
+    "id": 6,
+    "title": "Integrations",
+    "url": "/integration",
+    "icon": "IoMdWifi"
+  }
+]

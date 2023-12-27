@@ -4,22 +4,22 @@ import transactionGif from './resource/transaction.gif';
 import transactionModes from './resource/transaction-modes.gif';
 import transactionSecurity from './resource/security.gif'
 import FeatureCard from './cards/featureCard';
-import Trending from './changing/trending';
+import AchievementsCard from './cards/achivements';
 
 
 const HomeComponent = () => {
 
   const featureArray = [
-    { id: 1, name: 'Multiple Transactions Modes', image: transactionModes, discription: "Multiple Mode And Devices Support" },
-    { id: 2, name: 'International Transactions', image: transactionGif, discription: "Internaltional Transaction Realtime" },
-    { id: 1, name: 'Blockchain Security', image: transactionSecurity, discription: "Internaltional Transaction Realtime" },
+    // { id: 1, name: 'Multiple Transactions Modes', image: transactionModes, discription: "Multiple Mode And Devices Support" },
+    // { id: 2, name: 'International Transactions', image: transactionGif, discription: "Internaltional Transaction Realtime" },
+    // { id: 1, name: 'Blockchain Security', image: transactionSecurity, discription: "Internaltional Transaction Realtime" },
   ];
 
   const traindingStat = [
-    { id: 1, key: "Successful Transactions", value: 38973979 },
-    { id: 2, key: "Active Users", value: 93979 },
-    { id: 3, key: "Daily Transactions", value: 3979, },
-    { id: 4, key: "Assets Handled Worth", value: 7673873979, currency: "$" }
+    // { id: 1, key: "Successful Transactions", value: 38973979 },
+    // { id: 2, key: "Active Users", value: 93979 },
+    // { id: 3, key: "Daily Transactions", value: 3979, },
+    // { id: 4, key: "Assets Handled Worth", value: 7673873979, currency: "$" }
   ]
 
   return (
@@ -27,8 +27,8 @@ const HomeComponent = () => {
       <div className='row  row-cols-md-3 g-4 mb-4 mt-4 border-bottom'>
         {
           traindingStat.map((stat) => (
-            <div key={stat.key} className='col'>
-              <Trending stat={stat} />
+            <div key={stat.key} className='col mb-4'>
+              <AchievementsCard stat={stat} />
             </div>
           ))
         }
