@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 // import axios from 'axios';
-import DynamicMap from './reports/Map/DynamicMap';
-import ReportGrouped from './reports/ReportGrouped';
+import DynamicMap from './reports/Map/dynamicMap';
+// import ReportGrouped from './reports/ReportGrouped';
 
 const MonthlyReport = () => {
     const location = useLocation();
@@ -33,7 +33,7 @@ const MonthlyReport = () => {
                 <h2>Monthly Report</h2>
                 {reportData ? (
                     <div>
-                        <ReportGrouped />
+                        {/* <ReportGrouped /> */}
                     </div>
                 ) : (
                     // <p>Loading...</p>

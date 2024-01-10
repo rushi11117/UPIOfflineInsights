@@ -94,7 +94,9 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import ReportRoutes from './routes/reportsRoutes';
 import IntegrationDocs from './integration/integrationDocs';
 import LocationChart from './components/locationChart';
-import DynamicMap from './components/reports/Map/DynamicMap';
+import DynamicMap from './components/reports/Map/dynamicMap';
+import ReportsGrouped from './components/reports/ReportsGrouped';
+// import ReportGrouped from './components/reports/ReportGrouped';
 // import Login from './security/loginForm';
 // import { checkLogin } from './components/Utils/loginUtils';
 
@@ -128,7 +130,7 @@ function App() {
                     <Route path="ondc" element={<LocationChart />} />
                     <Route path="/reports/*" element={<ReportRoutes />} />
                     <Route path="integration" element={<IntegrationDocs />} />
-                    <Route path="map" element={<DynamicMap />} />
+                    <Route path="map" element={<ReportsGrouped />} />
                     <Route path="*" element={<Error />} />
                   </Routes>
                 </div>
